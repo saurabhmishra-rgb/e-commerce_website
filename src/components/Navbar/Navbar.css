@@ -1,0 +1,134 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.navbar .logo{
+    width: 150px;  
+}
+.navbar-menu{
+   display: flex;
+   list-style: none;
+   gap: 20px;
+   color: #49557e;
+   font-size: 18px; 
+
+}
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar button{
+   background: transparent;
+   font-size: 16px;
+   color: #49557e;
+   border: 1px solid tomato;
+   padding: 10px 30px;
+   border-radius: 50px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+.navbar button:hover{
+   background: rgb(193, 190, 190);
+   color: white;
+}
+.navbar .active{
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+
+}
+.navbar li{
+    cursor: pointer;
+}
+.navbar-serch-icon{
+    position: relative;
+}
+/* Tablet screens */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  .navbar .logo {
+    width: 120px;
+  }
+  .navbar-menu {
+    gap: 15px;
+    font-size: 16px;
+  }
+  .navbar-right {
+    gap: 20px;
+  }
+  .navbar-right img {
+    width: 20px;
+    height: 20px;
+  }
+  .navbar button {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 8px 10px;
+    flex-wrap: nowrap;
+  }
+  .navbar .logo {
+    width: 100px;
+  }
+  .navbar-menu {
+    gap: 10px;
+    font-size: 14px;
+  }
+  .navbar-right {
+    gap: 12px;
+  }
+  .navbar-right img {
+    width: 18px;
+    height: 18px;
+  }
+  .navbar button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+  .navbar {
+    flex-wrap: nowrap;
+    gap: 5px;
+  }
+  .navbar .logo {
+    width: 80px;
+  }
+  .navbar-menu {
+    gap: 6px;
+    font-size: 12px;
+  }
+  .navbar-right {
+    gap: 6px;
+  }
+  .navbar-right img {
+    width: 16px;
+    height: 16px;
+  }
+  .navbar button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+/* .navbar-search-icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+     top: -8px;
+     right: -8px;
+
+} */

@@ -5,3 +5,61 @@
 .food-card:hover {
   transform: scale(1.15); /* Slight zoom */
 }
+
+
+.food-container {
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.food-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.food-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}
+
+.food-image {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.food-name {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.food-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff4d4d;
+}
+.Medusa{
+  transition: transform 0.9s ease;
+}
+.Medusa:hover {
+  transform: scale(1.15);
+}

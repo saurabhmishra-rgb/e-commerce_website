@@ -1,0 +1,98 @@
+/* Gallery container */
+.gallery-container {
+  padding: 3rem;
+  background: linear-gradient(135deg, #cfc1e1 0%, #cde4d0 100%);
+  min-height: 50vh;
+}
+
+.gallery-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: #2d3748;
+}
+
+/* Grid layout */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual cards */
+.gallery-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+}
+
+/* Salad images */
+.gallery-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+/* Overlay effect */
+.gallery-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .gallery-container {
+    padding: 1.5rem;
+  }
+  .gallery-grid {
+    gap: 1rem;
+  }
+  .gallery-image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-container {
+    padding: 0.7rem;
+  }
+  .gallery-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+  .gallery-card {
+    border-radius: 0.7rem;
+  }
+  .gallery-image {
+    height: 100px;
+  }
+  .gallery-overlay {
+    padding: 0.3rem;
+    font-size: 0.95rem;
+  }}

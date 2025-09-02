@@ -1,0 +1,74 @@
+.desserts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  background: linear-gradient(135deg, #c0e2ab 0%, #b7e2d6 100%);
+}
+
+.dessert-card {
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px;
+  width: 220px;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.dessert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+}
+
+.dessert-img {
+  width: 100%;
+  max-width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.dessert-name {
+  margin-top: 10px;
+  color: #d35400;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+  .dessert-card {
+    width: 45vw;
+    min-width: 160px;
+    max-width: 260px;
+  }
+  .desserts-container {
+    gap: 12px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .desserts-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  .dessert-card {
+    width: 90vw;
+    min-width: 120px;
+    max-width: 350px;
+    padding: 8px;
+  }
+  .dessert-img {
+    height: 100px;
+    margin-bottom: 6px;
+  }
+  .dessert-name {
+    font-size: 1rem;
+  }
+}
